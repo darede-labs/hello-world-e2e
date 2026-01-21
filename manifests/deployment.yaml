@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: hello-world-e2e
-        image: <ECR_ACCOUNT_ID>.dkr.ecr.<AWS_REGION>.amazonaws.com/hello-world-e2e:main
+        image: 948881762705.dkr.ecr.us-east-1.amazonaws.com/hello-world-e2e:main
         ports:
         - containerPort: 3000
           name: http
