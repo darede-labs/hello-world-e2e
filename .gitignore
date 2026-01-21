@@ -1,0 +1,19 @@
+# Temporary files
+*.tmp
+*.bak
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Secrets (should never be committed)
+secrets.yaml
+*.key
+*.pem
+
+# Local testing
+.env
+.env.local

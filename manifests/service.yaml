@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-world-e2e
+  namespace: default
+  labels:
+    app.kubernetes.io/name: hello-world-e2e
+    app.kubernetes.io/component: backend
+spec:
+  selector:
+    app.kubernetes.io/name: hello-world-e2e
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 3000
+    name: http
+  type: ClusterIP
